@@ -4,7 +4,7 @@
 	<head>
 		<meta charset = "utf-8">
 		
-		<title> James Dibnah </title>
+		<title> VINET </title>
                     
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     
@@ -22,71 +22,65 @@
 		
 	</head>
 	
-	<body >
+	<div class="background-image"></div>
+	
+	<body>
+		
 		<div id ="top"> </div>
+		
 		<a id="divToShowHide" class="BeforeScroll" href="#top">&#9650;</a>
 		
+		<nav>
+			<!--<div class = "mainNav clearfix">
+				<p class = "navicon XeXit" onClick="navToggle()">&#9776;</p>
+			</div>-->
+			
+			<div class="mainNav clearfix" onclick="navToggle(this) ">
+				<div class="bar1 "></div>
+				<div class="bar2 "></div>
+				<div class="bar3 "></div>
+			</div>
+
+		</nav>
 		
-		
-		<nav >
-				<!--<div class = "mainNav clearfix">
-					<p class = "navicon XeXit" onClick="navToggle()">&#9776;</p>
-				</div>-->
-				
-				<div class="mainNav clearfix" onclick="navToggle(this) ">
-					<div class="bar1 "></div>
-					<div class="bar2 "></div>
-					<div class="bar3 "></div>
-				</div>
-				<ul class = "mainNavDropDown clearfix XeXit">
-					<li class="liButtons"> <a href="index.html" class="NavButtonCol"> Home </a> </li>
-					<li class="liButtons"> <a href="gallery.html" class="NavButtonCol"> Gallery </a> </li>
-					<li class="liButtons"> <a href="#" class="NavButtonCol"> Projects </a> </li>
-					<li class="liButtons"> <a href="#" class="NavButtonCol"> Contact </a> </li>
-				</ul>
-				
-				
-			</nav>
-		
-		<section id="head">
-		</section>
+		<ul class = "mainNavDropDown clearfix XeXit">
+			<li class="liButtons"> <a href="index.html" class="NavButtonCol"> Home </a> </li>
+			<li class="liButtons"> <a href="index.html" class="NavButtonCol"> Join us </a> </li>
+			<li class="liButtons"> <a href="gallery.html" class="NavButtonCol"> About us </a> </li>
+			<li class="liButtons"> <a href="#" class="NavButtonCol"> Contact </a> </li>
+		</ul>
 		
 		<section id="mainWindow">
-		
+			<div id="headerBar"> 
+				<article id="header">
+				
+					<img src="pics/VINET_Banner_Cropped.png" alt="VINET logo"> </img>
+					
 
-		
-			<article id="header">
-				<h1 id="name"> James Dibnah </h1>
-				<h1 id="software"> Bsc(Hons) Software Engineer Student </h1>
-				<img class="img-circle" id ="imgProfilePic" src="pics/me.jpg">	
-			</article>
+					
 
+				</article>
+			</div>
 			<ul >
-				<li class="liButtons"> <a href="#" onClick="home()"> Home </a> </li>
-				<li class="liButtons"> <a href="#" onClick="gallery()"> Gallery </a> </li>
-				<li class="liButtons"> <a href="#" onClick="projects()"> Projects </a> </li>
-				<li class="liButtons"> <a href="#" onClick="contact()"> Contact </a> </li>
-			</ul>
-
-			
+						<li class="liButtons"> <a href="#" onClick="home()"> Home </a> </li>
+						<li class="liButtons"> <a href="#" onClick="home()"> Join us </a> </li>
+						<li class="liButtons"> <a href="#" onClick="gallery()"> About us </a> </li>
+						<li class="liButtons"> <a href="#" onClick="contact()"> Contact </a> </li>
+					</ul>
 			
 			<section id='content'>
 			</section>
+
 			
-			
+			<footer>
+				&#169 Copyright 2017
+			</footer>
 			
 		</section>
 		
-		<footer>
-			<article id="social" class="social-icons icon-circle icon-zoom list-unstyled list-inline">
-				<a href="https://www.flickr.com/photos/jamesdibnahphotography" class="icons"><i class="fa fa-flickr"></i></a>
-				<a href="https://github.com/DoctorDib" class="icons"><i class="fa fa-github"></i></a>
-				<a href="#" class="icons"><i class="fa fa-google-plus"></i></a>
-				<a href="https://www.linkedin.com/in/jamesdibnah" class="icons"><i class="fa fa-linkedin"></i></a>
-			</article>
-		</footer>
+		
 
-<!--include these script in head section or wherever you want-->
+		<!--include these script in head section or wherever you want-->
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script> 
 		
