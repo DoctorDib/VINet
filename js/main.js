@@ -120,21 +120,21 @@ function home(){
 	$('#content').load('content/home.html').fadeIn(1000);
 };
 
-function gallery(){
+function join_us(){
 	$('#content').hide();
-	$('#content').load('content/gallery.html').fadeIn(1000);
+	$('#content').load('content/join_us.html').fadeIn(1000);
 	carousel();
 	showDivs(slideIndex);
 };
 
-function projects(){
+function about_us(){
 	$('#content').hide();
-	$('#content').load('content/projects.html').fadeIn(1000);
+	$('#content').load('content/about_us.html').fadeIn(1000);
 };
 
-function contact(){
+function contact_us(){
 	$('#content').hide();
-	$('#content').load('content/contact.html').fadeIn(1000);
+	$('#content').load('content/contact_us.html').fadeIn(1000);
 };
 
 $(document).ready(main);

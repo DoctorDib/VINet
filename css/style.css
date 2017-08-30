@@ -133,7 +133,7 @@ ul {
 	
 	border:0;
 	
-	border: 0.11em;
+	border: 0.05em;
 	border-style: solid;
     border-top-color: black;
 
@@ -144,11 +144,15 @@ li {
 	list-style-type: square;
 	border:0;
 	width:100%;
-	border: 0.01em;
+	border-right: 0.01em;
+	border-left: 0.01em;
 	border-style: solid;
     border-top-color: black;
 	
 	background-color: #43b581;
+	
+	
+	
 }
 
 #side-image{
@@ -182,34 +186,32 @@ a {
 .liButtons {
 	float: left;
 	cursor: pointer;
-	font-size: 1em;
+	font-size: 1.3em;
 
-	padding:0.30em;
+	padding:0.20em;
 
     width: 25%;
 
 	text-align: center;
 	list-style-type: none;
 	
-	font-family: arial;
+	font-family: Impact, fantasy
 	
 	text-decoration: none;
 	text-transform: uppercase;
 	
 	color: black;
 	float: left;
-	padding: 20px;
+	padding: 15px;
 }
 
 .liButtons:hover{
 	border:0;
 	border-top: 0.10em;
-	border-top: 6px solid black;
-	padding-top:14px;
 
 	font-weight: bold;
 	
-	background-color: green;
+	background-color: #3da073;
 }
 
 .XeXit {
@@ -218,7 +220,6 @@ a {
 
 /* FOOTER */
 footer {
-	background-color: #3f3f3f;
 	height: 3em;
 	bottom: 0;
 	
