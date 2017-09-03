@@ -96,10 +96,17 @@ function contact_us(){
 
 
 
+
+
+
+
+
+
+/** LOADING PROFILE DATA */
 var loadProfile = function (user) {
 	$('#profileContent').hide();
 	
-	var url = 'content/team/'+user+'.html'
+	var url = 'content/team/' + user + '.html'
 	
 	$('#profileContent').load(url).fadeIn(1000);
 }
@@ -110,23 +117,24 @@ var Bool = true;
 
 var toggleClick = function (name) {
 
-	console.log(this);
-
-	var modal = document.getElementById(name);
-	
-	console.log(modal)
+	var modal = document.getElementById('modal-content');
+	var back = document.getElementById('modal-background');
 	
 	if (Bool === true){
 		Bool = false;
-		loadProfile(name)
+		document.getElementById("mainWindow").style.backgroundColor = "#282828";
 		modal.style.display = "block";
+		back.style.display = "block";
+		loadProfile(name);
+		
 	} else {
 		Bool = true;
+		document.getElementById("mainWindow").style.backgroundColor = "#e5e5e5";
 		modal.style.display = "none";
+		back.style.display = "none";
 	}
 
 }
-
 
 $(document).ready(main);
 
