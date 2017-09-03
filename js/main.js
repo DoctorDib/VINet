@@ -14,7 +14,6 @@ function main(){
 
 	$('#content').load('content/home.html').delay(100);
 	
-	carousel()
 };
 
 
@@ -66,58 +65,15 @@ $(document).ready(function(){
 
 
 
-
-/** GALLERY*/
-function carousel() {
-	var i;
-	var x = document.getElementsByClassName("mySlides");
-	for (i = 0; i < x.length; i++) {
-	   x[i].style.display = "none";  
-	}
-	myIndex++;
-	if (myIndex > x.length) {myIndex = 1}    
-	x[myIndex-1].style.display = "block"; 
-		
-	setTimeout(carousel, 1000);
-	
-}
-
-function plusDivs(n) {
-	showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-	showDivs(slideIndex = n);
-	myIndex = n;
-}
-
-function showDivs(n) {
-	var i;
-	var x = document.getElementsByClassName("mySlides");
-
-	if (n > x.length) {s
-		lideIndex = 1;
-	}
-	if (n < 1) {
-		slideIndex = x.length;
-	}
-	
-	for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";
-	}
-	
-	x[slideIndex-1].style.display = "block";
-	
-}
-
-
-
-
-
 /** BUTTONS SCRIPT LOAD */
 function home(){
 	$('#content').hide();
 	$('#content').load('content/home.html').fadeIn(1000);
+};
+
+function meet_the_team(){
+	$('#content').hide();
+	$('#content').load('content/meet_the_team.html').fadeIn(1000);
 };
 
 function join_us(){
@@ -136,6 +92,41 @@ function contact_us(){
 	$('#content').hide();
 	$('#content').load('content/contact_us.html').fadeIn(1000);
 };
+
+
+
+
+var loadProfile = function (user) {
+	$('#profileContent').hide();
+	
+	var url = 'content/team/'+user+'.html'
+	
+	$('#profileContent').load(url).fadeIn(1000);
+}
+
+
+
+var Bool = true;
+
+var toggleClick = function (name) {
+
+	console.log(this);
+
+	var modal = document.getElementById(name);
+	
+	console.log(modal)
+	
+	if (Bool === true){
+		Bool = false;
+		loadProfile(name)
+		modal.style.display = "block";
+	} else {
+		Bool = true;
+		modal.style.display = "none";
+	}
+
+}
+
 
 $(document).ready(main);
 

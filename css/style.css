@@ -25,6 +25,37 @@ p {
 }
 
 
+table{
+	border: 0;
+	border-top: 0.1em;
+	border-color: black;
+	border-style: solid;
+	
+	width: 100%;
+}
+
+tr{
+	border-style: solid;
+	border-color: black;
+	border-bottom: 1em;
+}
+td{
+	padding: 1em;
+	
+	padding-bottom: 3em;
+	padding-top: 3em;
+}
+
+.tableRank{
+	font-size: 1.6em;
+}
+
+.tableDescription{
+	width: 60%;
+}
+
+
+
 #top {
 	position: absolute;
 	color: none;
@@ -190,12 +221,12 @@ a {
 
 	padding:0.20em;
 
-    width: 25%;
+    width: 20%;
 
 	text-align: center;
 	list-style-type: none;
 	
-	font-family: Impact, fantasy
+	font-family: Impact, fantasy;
 	
 	text-decoration: none;
 	text-transform: uppercase;

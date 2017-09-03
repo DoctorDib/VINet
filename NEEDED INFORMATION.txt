@@ -1,0 +1,53 @@
+<article>
+	
+	<h1> Meet the team! </h1>
+
+	<table>
+			
+		<th class="tableRank">RANK 1</th>
+		
+		<tr>
+			<td> J.Dibnah </td>
+			<td> CEO </td>
+			<td class="tableDescription"> I'm here to drink milk, and deliver your goods... and we're all outa milk. </td>
+		</tr>
+		<tr>
+			<td> Dalliias </td>
+			<td> CEO </td>
+			<td class="tableDescription"> Hey I'm Dal, If you see me running, you should probably run in the direction I am. </td>
+		</tr>
+		<tr>
+			<td> J.Sharp </td>
+			<td> CEO </td>
+			<td class="tableDescription"> Edward Jamison "Jamie" Sharp, a veteran Chief Warrant Officer of the Galactic Alliance Navy. Having served 
+			my time as a Naval Pilot of a F7H Short-Range Fighter. I've retired from the Navy having acquired a multitude of 
+			skills, including close protection, crew management and strategic planning. </td>
+		</tr>
+		
+	</table>
+	
+	<table>
+		
+		<th class="tableRank">RANK 2</th>
+	
+		<tr>
+			<td>  </td>
+			<td>  </td>
+			<td>  </td>
+		</tr>
+	</table>
+
+	
+	<table>
+		
+		<th class="tableRank">RANK 3</th>
+	
+		<tr>
+			<td> Captain Tark </td>
+			<td> Supervisor </td>
+			<td> [bio needed] </td>
+		</tr>
+	</table>
+
+	
+</article>
