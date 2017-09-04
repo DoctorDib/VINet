@@ -121,6 +121,8 @@ body {
 
 	background-color: #e5e5e5;
 	
+	overflow-x: hidden;
+	
 }
 #headerBar {
 	width: 100%;
@@ -138,9 +140,11 @@ body {
 }
 
 #header {
-	height: 30%;
-	border: 0;
-	margin-bottom: 0;
+	position: relative;
+	width: 40em;
+	margin-left: auto;
+	margin-right: auto;
+	top: 2.5em;
 }
 
 #name {
@@ -204,6 +208,7 @@ li {
 
 ul li a{
 	text-align: center;	
+	height: 100%;
 }
 
 a:visited { 
@@ -224,7 +229,8 @@ a {
 	padding:0.20em;
 
     width: 20%;
-
+	height: 100%;
+	
 	text-align: center;
 	list-style-type: none;
 	
@@ -385,9 +391,33 @@ height: 12px;
 
 
 /* MOBILE RESPONSIVENESS */
+
+@media only screen and (max-width: 3440px){
+	body{
+		background: url(../pics/backgrounds/BG_2K_Wide.png);
+	}
+}
+@media only screen and (max-width: 1920px){
+	body{
+		background: url(../pics/backgrounds/BG_2K.png);
+	}
+}
 @media only screen and (max-width: 1500px) {
 	article{
 		padding: 1em;
+	}
+	.liButtons{
+		font-size: 1.2em;
+	}
+	
+}
+@media only screen and (max-width: 1200px) {
+	article{
+		padding: 1em;
+	}
+	.liButtons{
+		padding: 0.5em;
+		font-size: 1em;
 	}
 	
 }
@@ -398,19 +428,30 @@ height: 12px;
 	#software{
 		font-size: 0.8em;
 	}
-	a {
-		font-size: 0.7em;
+	#headerBar{
+		
 	}
+	
 	article{
 		padding: 1em;
+	}
+	#mainWindow {
+		width: 90%;
+		bottom: 0;
 	}
 	
 }
 @media only screen and (max-width: 675px) {
+	#header{
+		
+		margin-top: 1.5em;
+		width: 100%;
+		
+	}
+	
     #mainWindow {
 		width: 90%;
 		bottom: 0;
-		overflow: auto;
 	}
 
 	.XeXit {
@@ -540,15 +581,7 @@ height: 12px;
 	.mainNavDropDown li:hover{
 		background: #262626;
 	 }
-    
 
-	
-	
-	
-	
-	
-
-	
 	
 }
 
