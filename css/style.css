@@ -540,6 +540,8 @@ height: 12px;
 	.mainNavDropDown li:hover{
 		background: #262626;
 	 }
+    
+
 	
 	
 	
@@ -549,6 +551,8 @@ height: 12px;
 	
 	
 }
+
+/* Dayle's CSS */
 
 
 .gradiant_bg {
@@ -556,7 +560,20 @@ height: 12px;
     height: 170px;
 }
 
-.pictureRank {
+.picturesRank {
     text-align: center;
-    padding-top: 1%;
+    padding-top: 10px;
 }
+
+.profilePictureBox {
+    box-shadow: 0px 0px 20px #888888;
+}
+
+.profilePictureBox:hover {
+    box-shadow: 0px 0px 30px #888888;
+    
+}
+
+
+
+
