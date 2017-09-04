@@ -540,6 +540,11 @@ height: 12px;
 	.mainNavDropDown li:hover{
 		background: #262626;
 	 }
+    
+    .profilePictureBox {
+        width: 50px;
+        height: 50px;
+    }
 	
 	
 	
@@ -558,5 +563,15 @@ height: 12px;
 
 .pictureRank {
     text-align: center;
-    padding-top: 1%;
+    padding-top: 10px;
 }
+
+.profilePictureBox {
+    box-shadow: 0px 0px 20px #888888;
+}
+
+.profilePictureBox:hover {
+    box-shadow: 0px 0px 30px #888888;
+    
+}
+
